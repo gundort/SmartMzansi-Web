@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Mzansi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="currency-selector">
+            <select id="currency">
+            <option selected>ZAR (R)</option>
+            <option>USD ($)</option>
+            <option>EUR (€)</option>
+            <option>GBP (£)</option>
+        </select>
+        </div>
+        <div class="language-selector">
+            <select id="language">
+            <option selected>🇿🇦 English</option>
+            <option>🇿🇦 isiZulu</option>
+            <option>🇿🇦 isiXhosa</option>
+            <option>🇿🇦 Sesotho</option>
+            <option>🇿🇦 Afrikaans</option>
+            <option>🇿🇦 Setswana</option>
+            <option>🇫🇷 French</option>
+            <option>🇪🇸 Spanish</option>
+            <option>🇨🇳 Chinese</option>
+            <option>🇸🇦 Arabic</option>
+        </select>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Smart <span class="highlight">Mzansi</span></div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section Like WooCommerce -->
+    <section class="hero-section">
+        <!-- Decorative Blob Background -->
+        <div class="green-blob-bg"></div>
+
+        <div class="text-content">
+            <h1>Forget cookie-cutter ecommerce</h1>
+            <p>At Smart Mzansi, we empower local sellers and give shoppers more ways to connect with proudly South African products. Grow your hustle. Shop local. Support home.</p>
+            <a href="register/auth.php" class="cta-button">Register or Log In</a>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <img src="local.png" class="carousel-img active" alt="Carousel image 1">
+                <img src="local clothes.jpg" class="carousel-img" alt="Carousel image 2">
+                <img src="package.webp" class="carousel-img" alt="Carousel image 3">
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+            <a href="category.php?category=electronics" class="category-card">
+                <img src="electronics.jpg" alt="Electronics">
+                <span>Electronics</span>
+            </a>
+            <a href="category.php?category=fashion" class="category-card">
+                <img src="fashion-ecommerce.webp" alt="Fashion">
+                <span>Fashion</span>
+            </a>
+            <a href="category.php?category=home" class="category-card">
+                <img src="home.webp" alt="Home & Living">
+                <span>Home & Living</span>
+            </a>
+            <a href="category.php?category=beauty" class="category-card">
+                <img src="beauty.jpg" alt="Beauty">
+                <span>Beauty</span>
+            </a>
+            <a href="category.php?category=sports" class="category-card">
+                <img src="sports.jpg" alt="Sports">
+                <span>Sports</span>
+            </a>
+            <a href="category.php?category=grocery" class="category-card">
+                <img src="grocery.jpeg" alt="Grocery">
+                <span>Grocery</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Icons Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature">
+                <i class="material-icons feature-icon">local_shipping</i>
+                <h4>Fast Delivery</h4>
+                <p>Quick and reliable shipping across South Africa.</p>
+            </div>
+            <div class="feature">
+                <i class="material-icons feature-icon">lock</i>
+                <h4>Secure Payment</h4>
+                <p>Your payment is safe with our trusted gateways.</p>
+            </div>
+            <div class="feature">
+                <i class="material-icons feature-icon">headset_mic</i>
+                <h4>Customer Support</h4>
+                <p>We're here to help you anytime you need it.</p>
+            </div>
+            <div class="feature">
+                <i class="material-icons feature-icon">military_tech</i>
+                <h4>Top Quality</h4>
+                <p>Only verified sellers, trusted by our customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="stats-title">Trusted by South Africa's digital economy</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <h3><span class="count" data-target="10000">0</span>+</h3>
+                    <p>Local vendors using Smart Mzansi</p>
+                    <a href="#">Vendor List</a>
+                </div>
+                <div class="stat">
+                    <h3><span class="count" data-target="70">0</span>%</h3>
+                    <p>of our shoppers return monthly</p>
+                    <a href="#">Shopper Stats</a>
+                </div>
+                <div class="stat">
+                    <h3><span class="count" data-target="9">0</span>/10</h3>
+                    <p>Average customer satisfaction</p>
+                    <a href="#">Review Highlights</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help-section">
+        <h2 class="section-title">How can Smart Mzansi help you?</h2>
+        <div class="help-content">
+            <div class="help-text">
+                <h3>Sell with Smart Mzansi</h3>
+                <p>Sell and scale <em>your</em> way, with a Smart Mzansi store as unique as you!</p>
+                <a href="#register" class="btn">Create your dream store</a>
+            </div>
+            <div class="help-slideshow">
+                <img src="store.jpg" alt="Shop example" class="slide active">
+                <img src="ladydreamstore.webp" alt="Shop example" class="slide">
+                <img src="dreamshop.jpg" alt="Shop example" class="slide">
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-showcase">
+        <h2 class="brands-title">The brands you love, love <span class="mzansi-logo">Smart Mzansi</span></h2>
+
+        <div class="brands-slider-wrapper">
+            <div class="brands-row row-1">
+                <img src="apple1.jpeg" alt="Brand 1" />
+                <img src="maybelline1.png" alt="Brand 2" />
+                <img src="smeg1.jpeg" alt="Brand 3" />
+                <img src="samsung1.jpg" alt="Brand 4" />
+                <!-- Add more images -->
+            </div>
+            <div class="brands-row row-2">
+                <img src="adidas3.webp" alt="Brand 5" />
+                <img src="nba.png" alt="Brand 6" />
+                <img src="nike.jpg" alt="Brand 7" />
+                <img src="puma.webp" alt="Brand 8" />
+                <!-- Add more images -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="social-media">
+        <!-- Social Media Icons Section (place just above your footer) -->
+        <div class=" social-media " style="text-align: center; padding: 1rem 0; ">
+            <!-- Replace href URLs with your actual profiles -->
+            <a href="https://www.facebook.com/YourPage " target="_blank " style="margin: 0 10px; ">
+                <i class="fa-brands fa-facebook-f " style="font-size: 24px; color: #3b5998; "></i>
+            </a>
+            <a href="https://twitter.com/YourProfile " target="_blank " style="margin: 0 10px; ">
+                <i class="fa-brands fa-x-twitter " style="font-size: 24px; color: #1da1f2; "></i>
+            </a>
+            <a href="https://www.instagram.com/YourProfile " target="_blank " style="margin: 0 10px; ">
+                <i class="fa-brands fa-instagram " style="font-size: 24px; color: #e4405f; "></i>
+            </a>
+            <a href="https://www.linkedin.com/in/YourProfile " target="_blank " style="margin: 0 10px; ">
+                <i class="fa-brands fa-linkedin-in " style="font-size: 24px; color: #0077b5; "></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="rights">
+        <!-- Copyright / “All Rights Reserved” Section -->
+        <div class="site-footer " style="text-align: center; padding: 0.5rem 0; font-size: 0.9rem; color: #555; ">
+            &copy;
+            <?= date('Y') ?> Smart Mzansi. All rights reserved.
+        </div>
+    </section>
+
+
+</body>
+
+</html>
