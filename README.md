@@ -1,9 +1,12 @@
-Smart Mzansi
+# Smart Mzansi
+
 A South African multi-vendor e-commerce platform connecting local sellers with buyers. Built with PHP, MySQL, HTML, CSS, and JavaScript.
-Overview
+
+# Overview
 Smart Mzansi is a complete e-commerce solution that empowers local South African sellers and gives shoppers more ways to connect with proudly South African products. The platform features role-based access for buyers, sellers, and administrators.
-Features
-For Buyers
+
+# Features
+### For Buyers
 * Browse and search products by category
 * Add products to shopping cart
 * Create and manage wishlists
@@ -11,7 +14,7 @@ For Buyers
 * View order history and status
 * Send messages to sellers about orders
 * Profile management
-For Sellers
+### For Sellers
 * Product management (add, edit, delete)
 * Order management and status tracking
 * Message buyers directly
@@ -19,19 +22,21 @@ For Sellers
 * Set monthly sales goals and track progress
 * Low-stock alerts
 * Seller profile management
-For Administrators
+### For Administrators
 * Product approval workflow
 * User management (view, delete)
 * Order overview
 * View all message threads between buyers and sellers
 * Category management
-Technology Stack
+* 
+# Technology Stack
 * PHP 7.4+
 * MySQL 5.7+
 * HTML5, CSS3, JavaScript
 * Font Awesome 6.5.0
 * Google Fonts (Georgia, Poppins)
-Database Structure
+
+# Database Structure
 The application uses a MySQL database named user_auth with the following key tables:
 * users - User accounts (email, password, role, full_name)
 * products - Product listings (seller_id, name, description, price, quantity, image, approved)
@@ -44,12 +49,13 @@ The application uses a MySQL database named user_auth with the following key tab
 * reviews - Product reviews and ratings
 * seller_goals - Monthly sales goals for sellers
 * notifications - System notifications for users
-Installation
-Prerequisites
+
+# Installation
+### Prerequisites
 * Web server (Apache/Nginx) with PHP support
 * MySQL database server
 * PHP 7.4 or higher
-Steps
+# Steps
 1. Clone the repository to your web server root directory:
 text
 git clone https://github.com/yourusername/smart-mzansi.git
@@ -127,8 +133,9 @@ Default admin credentials:
 6. Make sure the following directories are writable by the web server:
     * Dashboards/uploads/ - For product images
     * uploads/ - For seller ID documents
-File Structure
-text
+      
+# File Structure
+
 smart-mzansi/
 ├── index.html                 # Landing page
 ├── auth.php                   # Login/Register page
@@ -151,8 +158,9 @@ smart-mzansi/
 ├── updateprofile.php          # Profile update handler
 ├── uploads/                   # ID documents directory
 └── README.md                  # This file
-Usage
-Registration
+
+# Usage
+## Registration
 1. Navigate to auth.php
 2. Click the "Register" button
 3. Fill in email, password, confirm password, and select role (Buyer/Seller)
@@ -187,24 +195,24 @@ Product Approval Workflow
 3. Admin approves (approved = 1) or rejects (approved = -1) with reason
 4. Approved products appear in buyer shop
 
-File Uploads
+# File Uploads
 
 * Product images are stored in Dashboards/uploads/
 * ID documents are stored in uploads/
 * File size limits and validation should be configured on the server
 
-Browser Support
+# Browser Support
 * Chrome (latest)
 * Firefox (latest)
 * Edge (latest)
 * Safari (latest)
 * Mobile responsive design
 
-License
+# License
 This project is proprietary and confidential. All rights reserved.
 
-Contributing
+# Contributing
 This is a private project. For internal use only.
 
-Support
-For support, contact the development team.
+# Support
+For support, contact the user.
