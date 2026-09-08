@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background: #f4fbe2;
+    /* avocado-light */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trolley {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 130px;
+    height: 80px;
+    background: #6B8E23;
+    /* avocado green */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eye {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.pupil {
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.2s ease;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 25px;
+    color: #6B8E23;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-buttons .active {
+    background: #6B8E23;
+    color: white;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    margin: 8px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.roles {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6B8E23;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Confirm password field */
+
+.confirm-password-container {
+    display: none;
+}
+
+.error-message {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+    text-align: center;
+}
